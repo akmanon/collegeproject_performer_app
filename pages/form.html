@@ -1,0 +1,87 @@
+<div class="inner-cover" ng-controller="formCtrl">
+  <div class="row home form">
+      <div class="col-md-4">
+        <div class="card card-block animated flipInX">
+          <form name="graphForm" novalidate>
+            <div class="form-group">
+              <div ng-show=onselect>
+              <h5>Select last Sem You Appeared.</h5>
+                  <select  name="select1" ng-model="sel" placeholder="Example input" class="custom-select  ">
+                    <option value="">Choose...</option>
+                    <option value="sem1">Sem-1</option>
+                    <option value="sem2">Sem-2</option>
+                    <option value="sem3">Sem-3</option>
+                    <option value="sem4">Sem-4</option>
+                    <option value="sem5">Sem-5</option>
+                    <option value="sem6">Sem-6</option>
+                    <option value="sem7">Sem-7</option>
+                    <option value="sem8">Sem-8</option>
+                  </select>
+              </div>    
+                <div class="input-group mb-2 mr-sm-2 mb-sm-0 just">
+                    <div ng-show=onselect class="input-group-addon">ID VU4F15160</div>
+                    <input ng-show=onselect name="idno" type="number" class="form-control" placeholder="Example input" ng-model="idno" ng-required=sem1 ng-pattern="/^[0-9]{1,2}$/">
+                  </div>
+                <button ng-show=onselect class="btn btn-m btn-secondary btui" ng-disabled="graphForm.idno.$invalid" ng-click ="selectsem()">Submit</button>
+                  
+                <div ng-show=sem1 class="animated flipInX">
+                <h5 >Enter CGPI for particular SEM.</h5>
+
+                  <div ng-show=sem1 class="input-group mb-2 mr-sm-2 mb-sm-0">
+
+                    <div  class="input-group-addon">SEM-1 </div>
+                    <input name="label1" type="number" class="form-control" placeholder="Example input" ng-model="label1" ng-required=sem1 ng-pattern="/^[0-9]{1,2}$/">
+                    <span class="error" ng-show="graphForm.label1.$error.pattern">Not valid number!</span>
+                  </div>
+                  <div ng-show=sem2 class="input-group mb-2 mr-sm-2 mb-sm-0">
+                    <div class="input-group-addon">SEM-2</div>
+                    <input name="label2" type="number" class="form-control" placeholder="Example input" ng-model="label2" ng-required=sem2 ng-pattern="/^[0-9]{1,2}$/"> 
+                    <span class="error" ng-show="graphForm.label2.$error.pattern">Not valid number!</span>                 
+                  
+
+                  </div>
+                  <div ng-show=sem3 class="input-group mb-2 mr-sm-2 mb-sm-0">
+                    <div class="input-group-addon">SEM-3</div>
+                    <input name="label3" type="number" class="form-control" placeholder="Example input" ng-model="label3" ng-required=sem3 ng-pattern="/^[0-9]{1,2}$/">
+                    <span class="error" ng-show="graphForm.label3.$error.pattern">Not valid number!</span>
+                 
+
+                  </div>
+                  <div  ng-show=sem4 class="input-group mb-2 mr-sm-2 mb-sm-0">
+                    <div class="input-group-addon">SEM-4</div>
+                    <input name="label4" type="number" class="form-control" placeholder="Example input" ng-model="label4" ng-required=sem4 ng-pattern="/^[0-9]{1,2}$/">
+                    <span class="error" ng-show="graphForm.label4.$error.pattern">Not valid number!</span>
+                  
+
+                  </div>
+                  <div ng-show=sem5 class="input-group mb-2 mr-sm-2 mb-sm-0">
+                    <div class="input-group-addon">SEM-5</div>
+                    <input name="label5" type="number" class="form-control" placeholder="Example input" ng-model="label5" ng-required=sem5 ng-pattern="/^[0-9]{1,2}$/">
+                    <span class="error" ng-show="graphForm.label5.$error.pattern">Not valid number!</span>
+                  
+
+                  </div>
+                  <div ng-show=sem6 class="input-group mb-2 mr-sm-2 mb-sm-0">
+                    <div  class="input-group-addon">SEM-6</div>
+                    <input name="label6" type="number" class="form-control" placeholder="Example input" ng-model="label6" ng-required=sem6 ng-pattern="/^[0-9]{1,2}$/">
+                    <span class="error" ng-show="graphForm.label6.$error.pattern">Not valid number!</span>
+                  </div>
+                  <div ng-show=sem7 class="input-group mb-2 mr-sm-2 mb-sm-0">
+                    <div class="input-group-addon">SEM-7</div>
+                    <input name="label7" type="number" class="form-control" placeholder="Example input" ng-model="label7" ng-required=sem7 ng-pattern="/^[0-9]{1,2}$/">
+                    <span ng-show="graphForm.label7.$error.pattern">Not valid number!</span>
+                  </div>
+                  <div ng-show=sem8 class="input-group mb-2 mr-sm-2 mb-sm-0">
+                    <div  class="input-group-addon">SEM-8</div>
+                     <input name="label8" type="number" class="form-control" placeholder="Example input" ng-model="label8" ng-required=sem8 ng-pattern="/^[0-9]{1,2}$/">
+                    <span class="error" ng-show="graphForm.label8.$error.pattern">Not valid number!</span>
+                  </div>
+                </div>
+            </div>
+            <button class="btn btn-m btn-secondary btui" ng-show=select ng-click ="go('/graph')" ng-disabled="graphForm.label1.$invalid">Submit</button>
+          </form>
+
+          </div>
+        </div>
+        
+</div>

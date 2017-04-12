@@ -1,0 +1,15 @@
+<div class="row wraps1">
+	<div class="col-md-7 wraps">
+	<div class="profile_picture">
+		<p class="clienName">{{id}}</p>
+		<img ng-src="{{image}}" class="pic">
+
+	</div>
+		<div ng-controller="LineCtrl">
+		              <canvas id="line" class="chart chart-line" chart-data="data"
+		                chart-labels="labels" chart-colors="colors" chart-dataset-override="datasetOverride" >
+		              </canvas>
+		</div>
+	</div>
+</div>
+</div>
