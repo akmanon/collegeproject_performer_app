@@ -1,5 +1,9 @@
-# Animating AngularJS Apps: ngView
+#College Project
 
-The code and demo for the [scotch.io](http://scotch.io) tutorial:
+Create the CGPI Performance graph using semester SGPI pointers.
 
-[Animating AngularJS Apps: ngView](http://scotch.io/tutorials/javascript/animating-angularjs-apps-ngview)
+#Focused on Design and Optimization.
+#Languages used are Basic HTML, CSS, Javascript.
+#Framework used are Angular Js(By Google) and for database Firebase is used.
+#Developers are-
+#Ashish Kumar, Shrinath Khadke and Siddhant Bhoir.
